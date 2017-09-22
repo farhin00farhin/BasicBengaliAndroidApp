@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityBackgroundStyle"
+    tools:context=".ColorsActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <ListView
+        android:id="@+id/list_items"
+        style="@style/ListViewStyle"></ListView>
+</LinearLayout>

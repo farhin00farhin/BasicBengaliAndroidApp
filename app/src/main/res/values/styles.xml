@@ -1,0 +1,149 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">#b71c1c</item>
+        <item name="android:colorPrimaryDark">#b71c1c</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <!--Main Activity styles-->
+    <style name="WelcomeTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="CategoryColumnStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:elevation">4dp</item>
+        <item name="cardBackgroundColor">#bf360c</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CategoryLinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="CategoryShortCardStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="cardBackgroundColor">#bf360c</item>
+    </style>
+
+    <style name="CategoryCardViewImageStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="CategoryCardViewSmallImageStyle" parent="CategoryCardViewImageStyle">
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="CategoryCardTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">#F5F5F5</item>
+        <item name="android:background">#bf360c</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="CategoryLongCardTextStyle" parent="CategoryCardTextStyle">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="ActivityBackgroundStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#eceff1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--Child Activity Styles-->
+    <style name="ListViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">4dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="ListViewCardStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="ChildActivityWrapperLinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="SpeakerIconStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:src">@drawable/speaker</item>
+    </style>
+
+    <style name="ChildActivityIconImageStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="TextViewWrapperLinearLayoutStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ChildActivityTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/appColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ChildActivityBengaliTextStyle" parent="ChildActivityTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ChildActivityTextStyleWrapperLinearLayoutStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_weight">.7</item>
+    </style>
+
+    <style name="ChildActivityColoredTextStyleWrapperLinearLayoutStyle" parent="ChildActivityTextStyleWrapperLinearLayoutStyle">
+        <item name="android:background">#fbe9e7</item>
+    </style>
+
+</resources>

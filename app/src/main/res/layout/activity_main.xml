@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityBackgroundStyle"
+    tools:context=".MainActivity">
+
+    <LinearLayout style="@style/CategoryLinearLayoutStyle">
+
+        <include
+            android:id="@+id/custom_toolbar"
+            layout="@layout/toolbar"></include>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:elevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/android" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/welcomeText"
+                        style="@style/WelcomeTextStyle"
+                        android:text="Welcome to Basic Bengali"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        style="@style/WelcomeTextStyle"
+                        android:layout_below="@id/welcomeText"
+                        android:text="Learn Bengali with ease! "
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_numbers"
+                style="@style/CategoryColumnStyle"
+                android:onClick="">
+
+                <LinearLayout style="@style/CategoryLinearLayoutStyle">
+
+                    <ImageView
+                        style="@style/CategoryCardViewImageStyle"
+                        android:src="@drawable/number_logo" />
+
+                    <TextView
+                        style="@style/CategoryLongCardTextStyle"
+                        android:text="Numbers" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                style="@style/CategoryColumnStyle"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_colors"
+                    style="@style/CategoryShortCardStyle">
+
+                    <LinearLayout style="@style/CategoryLinearLayoutStyle">
+
+                        <ImageView
+                            style="@style/CategoryCardViewSmallImageStyle"
+                            android:src="@drawable/pantone" />
+
+                        <TextView
+                            style="@style/CategoryCardTextStyle"
+                            android:text="Colors" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_common_words"
+                    style="@style/CategoryShortCardStyle"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout style="@style/CategoryLinearLayoutStyle">
+
+                        <ImageView
+                            style="@style/CategoryCardViewSmallImageStyle"
+                            android:src="@drawable/common" />
+
+                        <TextView
+                            style="@style/CategoryCardTextStyle"
+                            android:text="Common Words" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_food"
+                style="@style/CategoryColumnStyle">
+
+                <LinearLayout style="@style/CategoryLinearLayoutStyle">
+
+                    <ImageView
+                        style="@style/CategoryCardViewImageStyle"
+                        android:src="@drawable/food" />
+
+                    <TextView
+                        style="@style/CategoryLongCardTextStyle"
+                        android:text="Food" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+

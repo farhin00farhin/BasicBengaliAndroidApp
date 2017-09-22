@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view_numbers"
+    style="@style/ListViewCardStyle">
+
+
+    <LinearLayout style="@style/ChildActivityWrapperLinearLayoutStyle">
+
+        <ImageView style="@style/SpeakerIconStyle" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_icon_holder"
+            style="@style/ChildActivityColoredTextStyleWrapperLinearLayoutStyle"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_view_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon1" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/TextViewWrapperLinearLayoutStyle">
+
+            <TextView
+                android:id="@+id/text_view_english_word"
+                style="@style/ChildActivityTextStyle"
+                android:text="One"
+                android:textSize="48sp" />
+
+
+            <TextView
+                android:id="@+id/text_view_bengali_pronunciation"
+                style="@style/ChildActivityTextStyle"
+                android:text="Ēk"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_view_bengali_word"
+                style="@style/ChildActivityBengaliTextStyle"
+                android:text="এক"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

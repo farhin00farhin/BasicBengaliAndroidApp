@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_food"
+    style="@style/ListViewCardStyle">
+
+    <LinearLayout style="@style/ChildActivityWrapperLinearLayoutStyle">
+
+        <ImageView style="@style/SpeakerIconStyle" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_icon_holder"
+            style="@style/ChildActivityColoredTextStyleWrapperLinearLayoutStyle">
+
+            <ImageView
+                android:id="@+id/image_view_icon"
+                style="@style/ChildActivityIconImageStyle"
+                android:src="@drawable/rice" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/TextViewWrapperLinearLayoutStyle">
+
+            <TextView
+                android:id="@+id/text_view_english_word"
+                style="@style/ChildActivityTextStyle"
+                android:gravity="center"
+                android:text="Rice"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/text_view_bengali_pronunciation"
+                style="@style/ChildActivityTextStyle"
+                android:text="Bhaat"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_view_bengali_word"
+                style="@style/ChildActivityBengaliTextStyle"
+                android:text="ভাত"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
